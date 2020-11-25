@@ -54,7 +54,7 @@ LeetCode
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [Rust](./array/src/solution/s0349_intersection_of_two_arrays.rs)|Easy|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [Rust](./array/src/solution/s0350_intersection_of_two_arrays_ii.rs)|Easy|
 |352|[Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/) | [Rust](./array/src/solution//array/src/solution/s0352_data_stream_as_disjoint_intervals.rs)|Hard|
-|354|[Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/) | [Rust](./array/src/solution//array/src/solution/s0354_russian_doll_envelopes.rs)|Hard|
+|354|[Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/) | [~~Rust~~](./array/src/solution//array/src/solution/s0354_russian_doll_envelopes.rs)|Hard|
 |376|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/) | [Rust](./array/src/solution/s0376_wiggle_subsequence.rs)|Medium|
 |560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | [Rust](./array/src/solution/s0560_subarray_sum_equals_k.rs)|Medium|
 |575|[Distribute Candies](https://leetcode.com/problems/distribute-candies/) | [Rust](./array/src/solution/s0575_distribute_candies.rs)|Easy|
@@ -147,6 +147,40 @@ LeetCode
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) | [C](./c/solution/s0285_inorder_successor_in_bst.c) |Medium|
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)  | [C](./c/solution/s0297_serialize_and_deserialize_binary_tree.c)|Medium|
 
+### Design
+
+
+| No | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+|146|[LRU Cache](https://leetcode.com/problems/lru-cache/)| [Rust](./design/src/solution/s0146_lru_cache.rs)|Hard|
+|170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/) | [Rust](./design/src/solution/s0170_two_sum_iii_data_structure_design.rs)|Easy|
+|170|[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/) | [Rust](./design/src/solution/s0251_flatten_2d_vector.rs)|Medium|
+|281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) | [Rust](./design/src/solution/s0251_flatten_2d_vector.rs)|Medium|
+|288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/) | [~~Rust~~](./design/src/solution/s0288_unique_word_abbreviation.rs)|Medium|
+|303|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)  | [Rust](./design/src/solution/s0303_range_sum_query_immutable.rs)|Easy|
+|304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) | [Rust](./design/src/solution/s0304_range_sum_query_2d_immutable.rs)|Medium|
+|307|[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [Rust](./design/src/solution/s0307_range_sum_query_mutable.rs)|Medium|
+|308|[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/) | [Rust](./design/src/solution/s0308_range_sum_query_2d_mutable.rs)|Hard|
+|346|[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) | [Rust](./design/src/solution/s0346_moving_average_from_data_stream.rs)|Easy|
+|348|[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) | [Rust](./design/src/solution/s0348_design_tic_tac_toe.rs)|Medium|
+|353|[Design Snake Game](https://leetcode.com/problems/design-snake-game/) | [Rust](./design/src/solution/s0353_design_snake_game.rs)|Medium|
+|355|[Design Twitter](https://leetcode.com/problems/design-twitter/) | [Rust](./design/src/solution/s0355_design_twitter.rs)|Medium|
+|359|[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/) | [Rust](./design/src/solution/s0359_logger_rate_limiter.rs)|Easy|
+|362|[Design Hit Counter](https://leetcode.com/problems/design-hit-counter/) | [Rust](./design/src/solution/s0362_design_hit_counter.rs)|Medium|
+|379|[Design Phone Directory](https://leetcode.com/problems/design-phone-directory/) | [Rust](./design/src/solution/s0379_design_phone_directory.rs)|Medium|
+|731|[My Calendar II](https://leetcode.com/problems/my-calendar-ii/) | [Rust](./design/src/solution/s0731_my_calendar_ii.rs)|Medium|
+|1032|[Stream of Characters](https://leetcode.com/problems/stream-of-characters/) | [Rust](./design/src/solution/s1032_stream_of_characters.rs)|Hard|
+|1206|[Design Skiplist](https://leetcode.com/problems/design-skiplist/) | [Rust](./design/src/solution/s1206_design_skiplist.rs)|Hard|
+|1352|[Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/) | [Rust](./design/src/solution/s1352_product_of_the_last_k_numbers.rs)|Medium|
+|1429|[First Unique Number](https://leetcode.com/problems/first-unique-number/) | [Rust](./design/src/solution/s1429_first_unique_number.rs)|Medium|
+|1570|[Dot Product of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors/) | [Rust](./design/src/solution/s1570_dot_product_of_two_sparse_vectors.rs)|Medium|
+
+
+### Dynamic Programming
+
+
+| No | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
 |1573|[Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [Rust](./algorithms/cpp/NumberOfWaysToSplitString/NumberOfWaysToSplitString.cpp)|Medium|
 |1556|[Thousand Separator](https://leetcode.com/problems/thousand-separator/) | [Rust](./algorithms/cpp/thousandSeparator/ThousandSeparator.cpp)|Easy|
 |1551|[Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal/) | [Rust](./algorithms/cpp/minimumOperationsToMakeArrayEqual/MinimumOperationsToMakeArrayEqual.cpp)|Medium|
@@ -297,10 +331,7 @@ LeetCode
 |313|[Super Ugly Number](https://leetcode.com/problems/super-ugly-number/) | [Rust](./algorithms/cpp/superUglyNumber/SuperUglyNumber.cpp)|Medium|
 |312|[Burst Balloons](https://leetcode.com/problems/burst-balloons/) | [Rust](./algorithms/cpp/burstBalloons/BurstBalloons.cpp)|Hard|
 |310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | [Rust](./algorithms/cpp/minimumHeightTrees/MinimumHeightTrees.cpp)|Medium|
-|307|[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [Rust](./algorithms/cpp/rangeSumQuery-Immutable/rangeSumQuery-Mutable/RangeSumQueryMutable.cpp)|Medium|
 |306|[Additive Number](https://leetcode.com/problems/additive-number/) | [Rust](./algorithms/cpp/additiveNumber/AdditiveNumber.cpp)|Medium|
-|304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) | [Rust](./algorithms/cpp/rangeSumQuery2D-Immutable/RangeSumQuery2dImmutable.cpp)|Medium|
-|303|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)  | [Rust](./algorithms/cpp/rangeSumQuery-Immutable/rangeSumQuery-Immutable.cpp)|Easy|
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/) | [Rust](./algorithms/cpp/removeInvalidParentheses/RemoveInvalidParentheses.cpp) |Hard|
 |299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)  | [Rust](./algorithms/cpp/bullsAndCows/bullsAndCows.cpp)|Easy|
 |292|[Nim Game](https://leetcode.com/problems/nim-game/)  | [Rust](./algorithms/cpp/nimGame/nimGame.cpp)|Easy|
@@ -357,7 +388,6 @@ LeetCode
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [Rust](./algorithms/cpp/binarySearchTreeIterator/binarySearchTreeIterator.cpp), [Java](./algorithms/java/src/binarySearchTreeIterator/binarySearchTreeIterator.java), [Rust](./algorithms/python/BinarySearchTreeIterator/BSTIterator.py)|Medium|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | [Rust](./algorithms/cpp/factorialTrailingZeroes/factorialTrailingZeroes.cpp)|Easy|
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | [Rust](./algorithms/cpp/excelSheetColumnNumber/excelSheetColumnNumber.cpp)|Easy|
-|170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/) &hearts; | [Rust](./algorithms/cpp/twoSum/twoSum.III.cpp)|Easy|
 |169|[Majority Element](https://leetcode.com/problems/majority-element/) | [Rust](./algorithms/cpp/majorityElement/majorityElement.cpp)|Easy|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | [Rust](./algorithms/cpp/excelSheetColumnTitle/excelSheetColumnTitle.cpp)|Easy|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) &hearts; | [Rust](./algorithms/cpp/twoSum/twoSum.II.cpp)|Medium|
@@ -372,7 +402,6 @@ LeetCode
 |149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/)| [Rust](./algorithms/cpp/maxPointsOnALine/maxPointsOnALine.cpp)|Hard|
 |148|[Sort List](https://leetcode.com/problems/sort-list/)| [Rust](./algorithms/cpp/sortList/sortList.cpp), [Rust](./algorithms/python/SortList/sortList.py)|Medium|
 |147|[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)| [Rust](./algorithms/cpp/insertionSortList/insertionSortList.cpp), [Rust](./algorithms/python/InsertionSortList/insertionSortList.py)|Medium|
-|146|[LRU Cache](https://leetcode.com/problems/lru-cache/)| [Rust](./algorithms/cpp/LRUCache/LRUCache.cpp), [Java](./algorithms/java/src/lruCache/LRUCache.java)|Hard|
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)| [Rust](./algorithms/cpp/binaryTreePostorderTraversal/binaryTreePostorderTraversal.cpp), [Rust](./algorithms/python/BinaryTreePostorderTraversal/postorderTraversal.py)|Hard|
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)| [Rust](./algorithms/cpp/binaryTreePreorderTraversal/binaryTreePreorderTraversal.cpp), [Java](./algorithms/java/src/binaryTreePreorderTraversal/binaryTreePreorderTraversal.java)|Medium|
 |143|[Reorder List](https://leetcode.com/problems/reorder-list/)| [Rust](./algorithms/cpp/reorderList/reorderList.cpp), [Rust](./algorithms/python/ReorderList/reorderList.py)|Medium|

@@ -48,7 +48,6 @@ mod s0074_search_a_2d_matrix;
 mod s0240_search_a_2d_matrix_ii;
 mod s0370_range_addition;
 mod s0079_word_search;
-mod s0212_word_search_ii;
 mod s0296_best_meeting_point;
 mod s0361_bomb_enemy;
 mod s0317_shortest_distance_from_all_buildings;

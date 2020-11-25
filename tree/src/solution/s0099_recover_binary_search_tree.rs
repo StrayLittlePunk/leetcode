@@ -191,7 +191,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_90() {
+    fn test_99() {
         let mut root1 = to_tree(vec![Some(3), Some(1), Some(4), None, None, Some(2)]);
         Solution::recover_tree(&mut root1);
         assert_eq!(

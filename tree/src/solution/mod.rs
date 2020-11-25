@@ -26,7 +26,7 @@ mod s0230_kth_smallest_element_in_a_bst;
 mod s0173_binary_search_tree_iterator;
 mod s0270_closest_binary_search_tree_value;
 mod s0272_closest_binary_search_tree_value_ii;
-pub mod s0090_recover_binary_search_tree;
+mod s0099_recover_binary_search_tree;
 mod s0156_binary_tree_upside_down;
 mod s0314_binary_tree_vertical_order_traversal;
 mod s0096_unique_binary_search_trees;

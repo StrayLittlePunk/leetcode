@@ -144,7 +144,7 @@ LeetCode
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)| [C](./c/solution/s0236_lowest_common_ancestor_of_a_binary_tree.c)|Medium|
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)| [C](./c/solution/s0237_delete_node_in_a_linked_list.c)|Easy|
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)  | [C](./c/solution/s0284_peeking_iterator.c)|Medium|
-|285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/)  [C](./c/solution/s0285_inorder_successor_in_bst.c)|Medium|
+|285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) | [C](./c/solution/s0285_inorder_successor_in_bst.c) |Medium|
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)  | [C](./c/solution/s0297_serialize_and_deserialize_binary_tree.c)|Medium|
 
 |1573|[Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [Rust](./algorithms/cpp/NumberOfWaysToSplitString/NumberOfWaysToSplitString.cpp)|Medium|

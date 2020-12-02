@@ -21,3 +21,4 @@ mod s0341_flatten_nested_list_iterator;
 mod s0378_kth_smallest_element_in_a_sorted_matrix;
 mod s1221_split_a_string_in_balanced_strings;
 mod s0857_minimum_cost_to_hire_k_workers;
+mod s0503_next_greater_element_ii;

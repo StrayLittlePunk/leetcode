@@ -64,17 +64,20 @@ LeetCode
 |724|[Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | [Rust](./array/src/solution/s0724_find_pivot_index.rs)|Easy|
 |821|[Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character/) | [Rust](./array/src/solution/s0821_shortest_distance_to_a_character.rs)|Easy|
 |896|[Monotonic Array](https://leetcode.com/problems/monotonic-array/) | [Rust](./array/src/solution/s0896_monotonic_array.rs)|Easy|
+|904|[Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | [Rust](./array/src/solution/s0904_fruit_into_baskets.rs)|Medium|
 |905|[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | [Rust](./array/src/solution/s0905_sort_array_by_parity.rs)|Easy|
 |931|[Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/) | [Rust](./array/src/solution/s0931_minimum_falling_path_sum.rs)|Medium|
 |939|[Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle/) | [Rust](./array/src/solution/s0939_minimum_area_rectangle.rs)|Medium|
 |941|[Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) | [Rust](./array/src/solution/s0941_valid_mountain_array.rs)|Easy|
 |969|[Pancake Sorting](https://leetcode.com/problems/pancake-sorting/) | [Rust](./array/src/solution/s0969_pancake_sorting.rs)|Medium|
 |986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [Rust](./array/src/solution/s0986_interval_list_intersections.rs)|Medium|
+|989|[Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) | [Rust](./array/src/solution/s0989_add_to_array_form_of_integer.rs)|Easy|
 |1053|[Previous Permutation With One Swap](https://leetcode.com/problems/previous-permutation-with-one-swap/) | [Rust](./array/src/solution/s1053_previous_permutation_with_one_swap.rs)|Medium|
 |1266|[Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/) | [Rust](./array/src/solution/s1266_minimum_time_visiting_all_points.rs)|Easy|
 |1281|[Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/) | [Rust](./array/src/solution/s1281_subtract_the_product_and_sum_of_digits_of_an_integer.rs)|Easy|
 |1287|[Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/) | [Rust](./array/src/solution/s1287_element_appearing_more_than_25_in_sorted_array.rs)|Easy|
 |1299|[Replace Elements with Greatest Element on Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/) | [Rust](./array/src/solution/s1299_replace_elements_with_greatest_element_on_right_side.rs)|Easy|
+|1314|[Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) | [Rust](./array/src/solution/s1314_matrix_block_sum.rs)|Medium|
 |1375|[Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii/) | [Rust](./array/src/solution/s1375_bulb_switcher_iii.rs)|Medium|
 
 
@@ -206,6 +209,8 @@ LeetCode
 |322|[Coin Change](https://leetcode.com/problems/coin-change/) | [Rust](./dynamic_programming/src/solution/s0322_coin_change.rs)|Medium|
 |363|[Max Sum of Rectangle No Larger Than K](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/) | [Rust](./dynamic_programming/src/solution/s0363_max_sum_of_rectangle_no_larger_than_k.rs)|Hard|
 |375|[Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/) | [Rust](./dynamic_programming/src/solution/s0375_guess_number_higher_or_lower_ii.rs)|Medium|
+|413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/) | [Rust](./dynamic_programming/src/solution/s0413_arithmetic_slices.rs)|Medium|
+|1000|[Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones/) | [Rust](./dynamic_programming/src/solution/s1000_minimum_cost_to_merge_stones.rs)|Hard|
 |1066|[Campus Bikes II](https://leetcode.com/problems/campus-bikes-ii/) | [Rust](./dynamic_programming/src/solution/s1066_campus_bikes_ii.rs)|Medium|
 |1155|[Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/) | [Rust](./dynamic_programming/src/solution/s1155_number_of_dice_rolls_with_target_sum.rs)|Medium|
 |1196|[How Many Apples Can You Put into the Basket](https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/) | [Rust](./dynamic_programming/src/solution/s1196_how_many_apples_can_you_put_into_the_basket.rs)|Easy|
@@ -242,9 +247,11 @@ LeetCode
 |399|[Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [Rust](./graph/src/solution/s0399_evaluate_division.rs)|Medium|
 |444|[Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/) | [Rust](./graph/src/solution/s0444_sequence_reconstruction.rs)|Medium|
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter/) | [Rust](./graph/src/solution/s0463_island_perimeter.rs)|Easy|
+|675|[Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/) | [Rust](./graph/src/solution/s0675_cut_off_trees_for_golf_event.rs)|Hard|
 |766|[Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/) | [Rust](./graph/src/solution/s0766_toeplitz_matrix.rs)|Easy|
 |787|[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [Rust](./graph/src/solution/s0787_cheapest_flights_within_k_stops.rs)|Medium|
 |841|[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | [Rust](./graph/src/solution/s0841_keys_and_rooms.rs)|Medium|
+|1254|[Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/) | [Rust](./graph/src/solution/s1254_number_of_closed_islands.rs)|Medium|
 
 
 ### Linkedlist
@@ -336,6 +343,7 @@ LeetCode
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/) | [Rust](./math/src/solution/s0397_integer_replacement.rs)|Medium|
 |400|[Nth Digit](https://leetcode.com/problems/nth-digit/) | [Rust](./math/src/solution/s0400_nth_digit.rs)|Medium|
 |885|[Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) | [Rust](./math/src/solution/s0885_spiral_matrix_iii.rs)|Medium|
+|1131|[Maximum of Absolute Value Expression](https://leetcode.com/problems/maximum-of-absolute-value-expression/) | [Rust](./math/src/solution/s1131_maximum_of_absolute_value_expression.rs)|Medium|
 |1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) | [Rust](./math/src/solution/s1137_n_th_tribonacci_number.rs)|Easy|
 |1439|[Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/) | [Rust](./math/src/solution/s1439_find_the_kth_smallest_sum_of_a_matrix_with_sorted_rows.rs)|Hard|
 |1518|[Water Bottles](https://leetcode.com/problems/water-bottles/) | [Rust](./math/src/solution/s1518_water_bottles.rs)|Easy|
@@ -403,6 +411,7 @@ LeetCode
 |385|[Mini Parser](https://leetcode.com/problems/mini-parser/) | [Rust](./stack_priority_queue/src/solution/s0385_mini_parser.rs)|Medium|
 |388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/) | [Rust](./stack_priority_queue/src/solution/s0388_longest_absolute_file_path.rs)|Medium|
 |394|[Decode String](https://leetcode.com/problems/decode-string/) | [Rust](./stack_priority_queue/src/solution/s0394_decode_string.rs)|Medium|
+|503|[Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/) | [Rust](./stack_priority_queue/src/solution/s0503_next_greater_element_ii.rs)|Medium|
 |857|[Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) | [Rust](./stack_priority_queue/src/solution/s0857_minimum_cost_to_hire_k_workers.rs)|Hard|
 |1221|[Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings/) | [Rust](./stack_priority_queue/src/solution/s1221_split_a_string_in_balanced_strings.rs)|Easy|
 
@@ -473,13 +482,17 @@ LeetCode
 |392|[Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Rust](./string/src/solution/s0392_is_subsequence.rs)|Medium|
 |395|[Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | [Rust](./string/src/solution/s0395_longest_substring_with_at_least_k_repeating_characters.rs)|Medium|
 |459|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/) | [Rust](./string/src/solution/s0459_repeated_substring_pattern.rs)|Easy|
+|647|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | [Rust](./string/src/solution/s0647_palindromic_substrings.rs)|Medium|
 |680|[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | [Rust](./string/src/solution/s0680_valid_palindrome_ii.rs)|Easy|
 |796|[Rotate String](https://leetcode.com/problems/rotate-string/) | [Rust](./string/src/solution/s0796_rotate_string.rs)|Easy|
 |804|[Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/) | [Rust](./string/src/solution/s0804_unique_morse_code_words.rs)|Easy|
+|819|[Most Common Word](https://leetcode.com/problems/most-common-word/) | [Rust](./string/src/solution/s0819_most_common_word.rs)|Easy|
 |884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/) | [Rust](./string/src/solution/s0884_uncommon_words_from_two_sentences.rs)|Easy|
+|929|[Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) | [Rust](./string/src/solution/s0929_unique_email_addresses.rs)|Easy|
 |1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [Rust](./string/src/solution/s1002_find_common_characters.rs)|Easy|
 |1047|[Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | [Rust](./string/src/solution/s1047_remove_all_adjacent_duplicates_in_string.rs)|Easy|
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | [Rust](./string/src/solution/s1071_greatest_common_divisor_of_strings.rs)|Easy|
+|1092|[Shortest Common Supersequence](https://leetcode.com/problems/shortest-common-supersequence/) | [Rust](./string/src/solution/s1092_shortest_common_supersequence)|Hard|
 |1100|[Find K-Length Substrings With No Repeated Characters](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/) | [Rust](./string/src/solution/s1100_find_k_length_substrings_with_no_repeated_characters.rs)|Medium|
 |1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) | [Rust](./string/src/solution/s1160_find_words_that_can_be_formed_by_characters.rs)|Easy|
 |1347|[Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) | [Rust](./string/src/solution/s1347_minimum_number_of_steps_to_make_two_strings_anagram.rs)|Medium|
@@ -534,6 +547,7 @@ LeetCode
 |337|[House Robber III](https://leetcode.com/problems/house-robber-iii/) | [Rust](./tree/src/solution/s0337_house_robber_iii.rs)|Medium|
 |366|[Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [Rust](./tree/src/solution/s0366_find_leaves_of_binary_tree.rs)|Medium|
 |437|[Path Sum III](https://leetcode.com/problems/path-sum-iii/) | [Rust](./tree/src/solution/s0437_path_sum_iii.rs)|Medium|
+|617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | [Rust](./tree/src/solution/s0617_merge_two_binary_trees.rs)|Easy|
 |654|[Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | [Rust](./tree/src/solution/s0653_two_sum_iv_input_is_a_bst.rs)|Easy|
 |1026|[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/) | [Rust](./tree/src/solution/s1026_maximum_difference_between_node_and_ancestor.rs)|Medium|
 |1145|[Binary Tree Coloring Game]() | [Rust](./tree/src/solution/s1145_binary_tree_coloring_game.rs)|Medium|

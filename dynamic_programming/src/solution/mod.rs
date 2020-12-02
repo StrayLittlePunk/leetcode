@@ -28,3 +28,5 @@ mod s1066_campus_bikes_ii;
 mod s1155_number_of_dice_rolls_with_target_sum;
 mod s1335_minimum_difficulty_of_a_job_schedule;
 mod s1196_how_many_apples_can_you_put_into_the_basket;
+mod s0413_arithmetic_slices;
+mod s1000_minimum_cost_to_merge_stones;

@@ -64,3 +64,6 @@ mod s0560_subarray_sum_equals_k;
 mod s1281_subtract_the_product_and_sum_of_digits_of_an_integer;
 mod s0896_monotonic_array;
 mod s0986_interval_list_intersections;
+mod s0904_fruit_into_baskets;
+mod s1314_matrix_block_sum;
+mod s0989_add_to_array_form_of_integer;

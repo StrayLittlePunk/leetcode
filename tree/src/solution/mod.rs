@@ -43,3 +43,4 @@ mod s1373_maximum_sum_bst_in_binary_tree;
 mod s1026_maximum_difference_between_node_and_ancestor;
 mod s0653_two_sum_iv_input_is_a_bst;
 mod s0437_path_sum_iii;
+mod s0617_merge_two_binary_trees;

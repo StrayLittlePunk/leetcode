@@ -71,3 +71,7 @@ mod s0796_rotate_string;
 mod s1347_minimum_number_of_steps_to_make_two_strings_anagram;
 mod s0884_uncommon_words_from_two_sentences;
 mod s0804_unique_morse_code_words;
+mod s0647_palindromic_substrings;
+mod s1092_shortest_common_supersequence;
+mod s0929_unique_email_addresses;
+mod s0819_most_common_word;

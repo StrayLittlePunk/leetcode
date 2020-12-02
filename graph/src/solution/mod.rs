@@ -25,3 +25,5 @@ mod s0444_sequence_reconstruction;
 mod s0787_cheapest_flights_within_k_stops;
 mod s0766_toeplitz_matrix;
 mod s0463_island_perimeter;
+mod s1254_number_of_closed_islands;
+mod s0675_cut_off_trees_for_golf_event;

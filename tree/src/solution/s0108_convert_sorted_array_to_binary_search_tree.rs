@@ -26,25 +26,41 @@ use std::rc::Rc;
 
 impl Solution {
     // Time O(N) Space O(logN)
+    //  如果数据的个数是奇数，则中间那个数据就是这群数据的中位数；如果数据的个数是偶数，
+    //  则中间那2个数据的算术平均值就是这群数据的中位数
     pub fn sorted_array_to_bst(nums: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
-      fn helper(nums: &Vec<i32>, l: usize, r: usize) -> Option<Rc<RefCell<TreeNode>>> {
-        if l >= r {
-          return None;
+        fn helper(nums: &Vec<i32>, l: usize, r: usize) -> Option<Rc<RefCell<TreeNode>>> {
+            if l >= r {
+                return None;
+            }
+
+            let mid = l + (r - l) / 2;
+            Some(Rc::new(RefCell::new(TreeNode {
+                val: nums[mid],
+                left: helper(nums, l, mid),
+                right: helper(nums, mid + 1, r),
+            })))
         }
 
-        let mid = l + (r - l) / 2;
-        Some(Rc::new(RefCell::new(TreeNode{
+        helper(&nums, 0, nums.len())
+    }
+    pub fn sorted_array_to_bst_slice(nums: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
+        Self::helper(&nums)
+    }
+    fn helper(nums: &[i32]) -> Option<Rc<RefCell<TreeNode>>> {
+        if nums.len() == 0 {
+            return None;
+        }
 
-          val: nums[mid],
-          left: helper(nums, l, mid),
-          right: helper(nums, mid+1, r),
+        let median = nums.len() / 2;
+        let left = Self::helper(&nums[0..median]);
+        let right = Self::helper(&nums[median + 1..nums.len()]);
 
+        Some(Rc::new(RefCell::new(TreeNode {
+            val: nums[median],
+            left,
+            right,
         })))
-
-      }
-
-      helper(&nums, 0, nums.len())
-
     }
 }
 

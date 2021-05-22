@@ -26,47 +26,41 @@ use std::rc::Rc;
 
 impl Solution {
     // Time O(N) Space O(N)
-    pub fn has_path_sum(root: Option<Rc<RefCell<TreeNode>>>, sum: i32) -> bool {
+    pub fn has_path_sum_r(root: Option<Rc<RefCell<TreeNode>>>, sum: i32) -> bool {
         match root {
             None => false,
-            Some(r) => {
-                let mut val_stack: Vec<i32> = vec![];
-                let mut node_stack: Vec<Option<Rc<RefCell<TreeNode>>>> = vec![];
-                val_stack.push(0);
-                node_stack.push(Some(r));
-                while let (Some(Some(node)), Some(val)) = (node_stack.pop(), val_stack.pop()) {
-                    if node.borrow().left.is_none() && node.borrow().right.is_none() {
-                        if node.borrow().val + val == sum {
-                            return true;
-                        }
-                    } else {
-                        if node.borrow().left.is_some() {
-                            val_stack.push(val + node.borrow().val);
-                            node_stack.push(node.borrow().left.clone());
-                        }
-                        if node.borrow().right.is_some() {
-                            val_stack.push(val + node.borrow().val);
-                            node_stack.push(node.borrow().right.clone());
-                        }
-                    }
+            Some(node) => {
+                if node.borrow().left.is_none() && node.borrow().right.is_none() {
+                    return sum == node.borrow().val;
                 }
-
-                false
+                Self::has_path_sum(node.borrow().left.clone(), sum - node.borrow().val)
+                    || Self::has_path_sum(node.borrow().right.clone(), sum - node.borrow().val)
             }
         }
     }
-    pub fn has_path_sum_r(root: Option<Rc<RefCell<TreeNode>>>, mut sum: i32) -> bool {
-        match root {
-            None => false,
-            Some(r) => {
-                sum -= r.borrow().val;
-                if r.borrow().left.is_none() && r.borrow().right.is_none() {
-                    return (sum == 0);
+    pub fn has_path_sum(mut root: Option<Rc<RefCell<TreeNode>>>, mut sum: i32) -> bool {
+        let mut stack = vec![];
+        while root.is_some() || !stack.is_empty() {
+            while let Some(node) = root {
+                sum -= node.borrow().val;
+                stack.push((node.clone(), sum));
+                root = node.borrow().left.clone();
+            }
+
+            if let Some((node, rem)) = stack.pop() {
+                // 回溯上一层的sum等于这一层的剩余值， 可变变量的后果。。
+                sum = rem;
+                // only if leaf node judge
+                if node.borrow().left.is_none() && node.borrow().right.is_none() && rem == 0 {
+                    return true;
                 }
-                Self::has_path_sum_r(r.borrow().left.clone(), sum)
-                    || Self::has_path_sum_r(r.borrow().right.clone(), sum)
+                if node.borrow().right.is_some() {
+                    root = node.borrow().right.clone();
+                }
             }
         }
+
+        false
     }
 }
 

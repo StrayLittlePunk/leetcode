@@ -53,6 +53,24 @@ impl Solution {
             }
         }
     }
+     pub fn max_depth_preorder(mut root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+        use std::cmp::max;
+        let (mut stack, mut depth, mut max_depth) = (vec![], 0, 0);
+
+        while root.is_some() || !stack.is_empty() {
+            while let Some(node) = root {
+                depth += 1;
+                stack.push((depth, node.clone()));
+                root = node.borrow().left.clone();
+            }
+            if let Some((dep, r)) = stack.pop() {
+                depth = dep;
+                max_depth = max(depth, max_depth);
+                root = r.borrow().right.clone();
+            }
+        }
+        max_depth
+    }
     pub fn max_depth_r(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         match root {
             None => 0,

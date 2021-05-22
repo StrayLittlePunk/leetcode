@@ -8,17 +8,17 @@ use std::cmp::max;
 
 impl Solution {
     pub fn max_sub_array(nums: Vec<i32>) -> i32 {
-              if nums.is_empty() {
-        return 0;
-      }
-      let mut pre = 0;
-      let mut max_ans = nums[0];
-      for num in &nums {
-        pre = max(pre + *num, *num);
-        max_ans = max(max_ans, pre);
-      }
-      max_ans
-
+        use std::cmp::{max, min};
+        let mut min_sum = 0;
+        let mut sum = 0;
+        let mut ret = std::i32::MIN;
+        for i in 0..nums.len() {
+            sum += nums[i];
+            // prefix_sum[j] - prefix_sum[i]
+            ret = max(ret, sum - min_sum);
+            min_sum = min(min_sum, sum);
+        }
+        ret
     }
 }
 
@@ -28,6 +28,9 @@ mod tests {
 
     #[test]
     fn test_53() {
-      assert_eq!(Solution::max_sub_array(vec![-2,1,-3,4,-1,2,1,-5,4]), 6);
+        assert_eq!(
+            Solution::max_sub_array(vec![-2, 1, -3, 4, -1, 2, 1, -5, 4]),
+            6
+        );
     }
 }

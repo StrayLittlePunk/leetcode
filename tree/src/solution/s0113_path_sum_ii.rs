@@ -25,6 +25,83 @@ use std::cell::RefCell;
 use std::rc::Rc;
 
 impl Solution {
+    pub fn path_sum_r(root: Option<Rc<RefCell<TreeNode>>>, sum: i32) -> Vec<Vec<i32>> {
+        let mut ans = vec![];
+        Self::helper(root, sum, vec![], &mut ans);
+        ans
+    }
+
+    fn helper(
+        root: Option<Rc<RefCell<TreeNode>>>,
+        sum: i32,
+        mut ret: Vec<i32>,
+        ans: &mut Vec<Vec<i32>>,
+    ) {
+        if let Some(node) = root {
+            // leaf node judge
+            if node.borrow().left.is_none() && node.borrow().right.is_none() {
+                if sum == node.borrow().val {
+                    ret.push(node.borrow().val);
+                    ans.push(ret);
+                }
+                return;
+            }
+            ret.push(node.borrow().val);
+            if node.borrow().left.is_some() {
+                Self::helper(
+                    node.borrow().left.clone(),
+                    sum - node.borrow().val,
+                    ret.clone(),
+                    ans,
+                );
+            }
+            if node.borrow().right.is_some() {
+                Self::helper(
+                    node.borrow().right.clone(),
+                    sum - node.borrow().val,
+                    ret,
+                    ans,
+                );
+            }
+        }
+    }
+
+    // 想法：保持stack的长度和路径数组长度一致，就可以保持出入元素顺序一样，发现在右边出错。只能
+    // 减少数组克隆开销，发现不可行
+    // Your input [5,4,8,11,null,13,4,7,2,null,null,5,1]
+    //            22
+    // Output [[5,4,11,2],[5,4,5]]
+    // Expected [[5,4,11,2],[5,8,4,5]]
+    // pub fn path_sum(mut root: Option<Rc<RefCell<TreeNode>>>, mut sum: i32) -> Vec<Vec<i32>> {
+    //     let (mut ans, mut stack, mut ret) = (vec![],vec![],vec![]);
+    //     while root.is_some() || !stack.is_empty() {
+    //         while let Some(node) = root {
+    //             ret.push(node.borrow().val);
+    //             sum -= node.borrow().val;
+    //             stack.push((node.clone(), sum));
+    //             root = node.borrow().left.clone();
+    //         }
+    //
+    //         if let Some((node, rem)) = stack.pop() {
+    //                sum = rem;
+    //             if node.borrow().left.is_none() && node.borrow().right.is_none() {
+    //                 if rem == 0 {
+    //                     ans.push(ret.clone());
+    //                 }
+    //                 ret.truncate(stack.len());
+    //                 continue;
+    //             }
+    //
+    //             if node.borrow().right.is_some() {
+    //                 root = node.borrow().right.clone();
+    //             } else {
+    //                 ret.pop();
+    //             }
+    //         }
+    //     }
+    //     ans
+    // }
+    //
     // Time O(N) Space O(N)
     // DFS + Stack
     pub fn path_sum(root: Option<Rc<RefCell<TreeNode>>>, sum: i32) -> Vec<Vec<i32>> {
@@ -103,11 +180,7 @@ impl Solution {
                              *   print!("{}, ", v);
                              * }
                              * println!("]"); */
-                            deque.push_back((
-                                cur.borrow().right.clone(),
-                                val + right_val,
-                                ls
-                            ));
+                            deque.push_back((cur.borrow().right.clone(), val + right_val, ls));
                         }
                     }
                 }

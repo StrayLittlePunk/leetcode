@@ -27,50 +27,45 @@ use std::rc::Rc;
 impl Solution {
     // Time O(N) Space O(N)
     pub fn is_symmetric(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
-        fn is_same(p: &Option<Rc<RefCell<TreeNode>>>, q: &Option<Rc<RefCell<TreeNode>>>) -> bool {
-            match (p, q) {
-                (Some(p), Some(q)) => {
-                    let (p, q) = (p.borrow(), q.borrow());
-                    p.val == q.val && is_same(&p.left, &q.right) && is_same(&p.right, &q.left)
-                }
-                (None, None) => true,
-                _ => false,
+        Self::is_mirror(root.clone(), root)
+    }
+    fn is_mirror(t1: Option<Rc<RefCell<TreeNode>>>, t2: Option<Rc<RefCell<TreeNode>>>) -> bool {
+        match (t1, t2) {
+            (None, None) => true,
+            (None, _) | (_, None) => false,
+            (Some(node1), Some(node2)) => {
+                node1.borrow().val == node2.borrow().val
+                    && Self::is_mirror(node1.borrow().right.clone(), node2.borrow().left.clone())
+                    && Self::is_mirror(node1.borrow().left.clone(), node2.borrow().right.clone())
             }
-        }
-
-        match root {
-            Some(root) => is_same(&root.borrow().left, &root.borrow().right),
-            None => true,
         }
     }
-
     pub fn is_symmetric_i(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
         use std::collections::VecDeque;
-
-        let mut deque: VecDeque<Option<Rc<RefCell<TreeNode>>>> = VecDeque::new();
-        deque.push_back(root.clone());
-        deque.push_back(root);
-        while let (Some(left), Some(right)) = (deque.pop_front(), deque.pop_front()) {
-            if left.is_none() && right.is_none() {
+        let mut queue = VecDeque::new();
+        queue.push_front(root.clone());
+        queue.push_front(root);
+        while let (Some(node1), Some(node2)) = (queue.pop_back(), queue.pop_back()) {
+            if node1.is_none() && node2.is_none() {
                 continue;
-            } else if left.is_none() || right.is_none() {
+            } else if node1.is_none() || node2.is_none() {
                 return false;
-            } else if left.as_ref().unwrap().borrow().val != right.as_ref().unwrap().borrow().val {
+            } else if node1.as_ref().unwrap().borrow().val != node2.as_ref().unwrap().borrow().val {
                 return false;
             }
-            match (left, right) {
+
+            match (node1, node2) {
                 (Some(l), Some(r)) => {
-                    deque.push_back(l.borrow().left.clone());
-                    deque.push_back(r.borrow().right.clone());
-                    deque.push_back(l.borrow().right.clone());
-                    deque.push_back(r.borrow().left.clone());
-                },
+                    queue.push_front(l.borrow().left.clone());
+                    queue.push_front(r.borrow().right.clone());
+                    queue.push_front(l.borrow().right.clone());
+                    queue.push_front(r.borrow().left.clone());
+                }
                 (_, _) => {
                     continue;
                 }
             }
         }
-
         true
     }
 }

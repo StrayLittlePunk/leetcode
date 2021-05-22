@@ -4,27 +4,24 @@ pub struct Solution {}
 
 impl Solution {
     pub fn find_min(nums: Vec<i32>) -> i32 {
-        if nums.is_empty() {
-            return 0;
-        } else if nums.len() == 1 {
-            return nums[0];
-        }
-        let mut l: i32 = 0;
-        let mut mid: i32 = 0;
-        let mut r: i32 =  (nums.len() - 1) as i32;
-
-        while r > l {
-          mid = l + (r - l) / 2;
-          if nums[mid as usize] > nums[r as usize] {
-            l = mid + 1;
-          } else if nums[mid as usize] < nums[r as usize] {
-            r = mid;
-          } else {
-            r -= 1;
-          }
+        let (mut start, mut end) = (0, nums.len() - 1);
+        while start + 1 < end {
+            let mid = start + (end - start) / 2;
+            if nums[mid] < nums[end] {
+                end = mid;
+            } else if nums[mid] > nums[end] {
+                start = mid;
+            } else {
+                // when num[mid] and num[end] are same
+                end -= 1;
+            }
         }
 
-        nums[l as usize]
+        if nums[start] < nums[end] {
+            nums[start]
+        } else {
+            nums[end]
+        }
     }
 }
 

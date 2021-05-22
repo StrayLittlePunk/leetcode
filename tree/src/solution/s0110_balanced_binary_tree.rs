@@ -61,6 +61,30 @@ impl Solution {
             }
         }
     }
+    pub fn is_balanced_r(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
+        Self::dfs_height(root) != -1
+    }
+
+    fn dfs_height(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+        match root {
+            None => 0,
+            Some(node) => {
+                let left_height = Self::dfs_height(node.borrow().left.clone());
+                if left_height == -1 {
+                    return -1;
+                }
+                let right_height = Self::dfs_height(node.borrow().right.clone());
+                if right_height == -1 {
+                    return -1;
+                }
+                if (left_height - right_height).abs() > 1 {
+                    return -1;
+                }
+
+                max(left_height, right_height) + 1
+            }
+        }
+    }
 }
 
 #[cfg(test)]

@@ -29,30 +29,24 @@ use std::cmp::min;
 impl Solution {
     // Time O(N) Space O(log N)
     pub fn min_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
-        match root {
-            None => 0,
-            Some(r) => {
-                use std::collections::VecDeque;
-                let mut deque: VecDeque<(Option<Rc<RefCell<TreeNode>>>, i32)> = VecDeque::new();
-                let mut min_dep = 0;
+        use std::collections::VecDeque;
+        let mut queue = VecDeque::new();
+        queue.push_back((root, 1));
+        while let Some((Some(node), depth)) = queue.pop_front() {
+            if node.borrow().left.is_none() && node.borrow().right.is_none() {
+                return depth;
+            }
 
-                deque.push_back((Some(r), 1));
-                while let Some((Some(node), height)) = deque.pop_front() {
-                    if node.borrow().left.is_none() && node.borrow().right.is_none() {
-                        min_dep =  height;
-                        break;
-                    } else {
-                        if node.borrow().left.is_some() {
-                            deque.push_back((node.borrow().left.clone(), height + 1));
-                        }
-                        if node.borrow().right.is_some() {
-                            deque.push_back((node.borrow().right.clone(), height + 1));
-                        }
-                    }
-                }
-                min_dep
+            if node.borrow().left.is_some() {
+                queue.push_back((node.borrow().left.clone(), depth + 1));
+            }
+
+            if node.borrow().right.is_some() {
+                queue.push_back((node.borrow().right.clone(), depth + 1));
             }
         }
+
+        0
     }
     // Time O(N) Space O(log N)
     pub fn min_depth_r(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {

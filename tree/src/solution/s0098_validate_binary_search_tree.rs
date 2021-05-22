@@ -47,6 +47,27 @@ impl Solution {
         let mut prev: i64 = std::i64::MIN;
         is_valid_helper(root, &mut prev)
     }
+
+    pub fn is_valid_bst_iter(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
+        use std::i64::MIN;
+        let (mut stack, mut max_val, mut r) = (vec![], MIN, root.clone());
+        while r.is_some() || !stack.is_empty() {
+            while let Some(node) = r {
+                stack.push(node.clone());
+                r = node.borrow().left.clone();
+            }
+            r = stack.pop();
+            if r.as_ref().unwrap().borrow().val as i64 > max_val {
+                max_val = r.as_ref().unwrap().borrow().val as i64;
+            } else {
+                return false;
+            }
+            if let Some(node) = r {
+                r = node.borrow().right.clone();
+            }
+        }
+        true
+    }
 }
 
 #[cfg(test)]

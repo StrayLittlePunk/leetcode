@@ -4,22 +4,22 @@ pub struct Solution {}
 
 impl Solution {
     pub fn find_peak_element(nums: Vec<i32>) -> i32 {
-        if nums.is_empty() {
-            return 0;
-        }
-        let mut l: i32 = 0;
-        let mut mid: i32 = 0;
-        let mut r: i32 =  (nums.len() - 1) as i32;
+        let (mut start, mut end) = (0, nums.len() - 1);
 
-        while r > l {
-          mid = l + (r - l) / 2;
-          if nums[mid as usize] > nums[(mid +1) as usize] {
-            r = mid;
-          } else {
-            l = mid + 1;
-          }
+        while start + 1 < end {
+            let mid = start + (end - start) / 2;
+            if nums[mid] < nums[mid + 1] {
+                start = mid;
+            } else if nums[mid] > nums[mid + 1] {
+                end = mid;
+            }
         }
-        l
+
+        if nums[start] > nums[end] {
+            start as i32
+        } else {
+            end as i32
+        }
     }
 }
 

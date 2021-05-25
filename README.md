@@ -190,7 +190,7 @@ LeetCode
 |62|[Unique Paths](https://leetcode.com/problems/unique-paths/)| [Rust](./dynamic_programming/src/solution/s0062_unique_paths.rs)|Medium|
 |63|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)| [Rust](./dynamic_programming/src/solution/s0063_unique_paths_ii.rs)|Medium|
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Rust](./dynamic_programming/src/solution/s0070_climbing_stairs.rs)|Easy|
-|72|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [Rust](.dynamic_programming/src/solution/s0072_edit_distance.rs)|Hard|
+|72|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [Rust](./dynamic_programming/src/solution/s0072_edit_distance.rs)|Hard|
 |85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)| [Rust](.dynamic_programming/src/solution/s0085_maximal_rectangle.rs)|Hard|
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)| [Rust](./dynamic_programming/src/solution/s0091_decode_ways.rs)|Medium|
 |97|[Interleaving String](https://leetcode.com/problems/interleaving-string/)| [Rust](./dynamic_programming/src/solution/s0097_interleaving_string.rs)|Hard|

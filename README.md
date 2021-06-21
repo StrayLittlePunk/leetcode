@@ -2,6 +2,7 @@
 LeetCode
 ========
 
+(Notes: "🔒" means you need to buy subscription from Leetcode)
 
 ### Array
 
@@ -366,23 +367,28 @@ LeetCode
 
 | No | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|175|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | [Rust](./sqlbash/s0175_combine_two_tables.sql)|Easy|
-|176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | [Rust](./sqlbash/s0176_second_highest_salary.sql)|Easy|
-|177|[Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | [Rust](./sqlbash/s0177_nth_highest_salary.sql)|Medium|
-|178|[Rank Scores](https://leetcode.com/problems/rank-scores/) | [Rust](./sqlbash/s0178_rank_scores.sql)|Medium|
-|180|[Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/) | [Rust](./sqlbash/s0180_consecutive_numbers.sql)|Medium|
-|181|[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | [Rust](./sqlbash/s0181_employees_earning_more_than_their_managers.sql)|Easy|
-|182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/) | [Rust](./sqlbash/s0182_duplicate_emails.sql)|Easy|
-|183|[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) | [Rust](./sqlbash/s0183_customers_who_never_order.sql)|Easy|
-|184|[Department Highest Salary](https://leetcode.com/problems/department-highest-salary/) | [Rust](./sqlbash/s0184_department_highest_salary.sql)|Medium|
-|185|[Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/) | [Rust](./sqlbash/s0185_department_top_three_salaries.sql)|Hard|
-|192|[Word Frequency](https://leetcode.com/problems/word-frequency/) | [Rust](./sqlbash/s0192_word_frequency.sh)|Medium|
-|193|[Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/) | [Rust](./sqlbash/s0193_valid_phone_numbers.sh)|Easy|
-|194|[Transpose File](https://leetcode.com/problems/transpose-file/) | [Rust](./sqlbash/s0194_transpose_file.sh)|Medium|
-|195|[Tenth Line](https://leetcode.com/problems/tenth-line/) | [Rust](./sqlbash/s0195_tenth_line.sh)|Easy|
-|196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/) | [Rust](./sqlbash/s0196_delete_duplicate_emails.sql)|Easy|
-|197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/) | [Rust](./sqlbash/s0197_rising_temperature.sql)|Easy|
-|262|[Trips and Users](https://leetcode.com/problems/trips-and-users/) | [Rust](./sqlbash/s0262_trips_and_users.sql)|Hard|
+|175|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | [SQL](./sqlbash/s0175_combine_two_tables.sql)|Easy|
+|176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | [SQL](./sqlbash/s0176_second_highest_salary.sql)|Easy|
+|177|[Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | [SQL](./sqlbash/s0177_nth_highest_salary.sql)|Medium|
+|178|[Rank Scores](https://leetcode.com/problems/rank-scores/) | [SQL](./sqlbash/s0178_rank_scores.sql)|Medium|
+|180|[Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/) | [SQL](./sqlbash/s0180_consecutive_numbers.sql)|Medium|
+|181|[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | [SQL](./sqlbash/s0181_employees_earning_more_than_their_managers.sql)|Easy|
+|182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/) | [SQL](./sqlbash/s0182_duplicate_emails.sql)|Easy|
+|183|[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) | [SQL](./sqlbash/s0183_customers_who_never_order.sql)|Easy|
+|184|[Department Highest Salary](https://leetcode.com/problems/department-highest-salary/) | [SQL](./sqlbash/s0184_department_highest_salary.sql)|Medium|
+|185|[Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/) | [SQL](./sqlbash/s0185_department_top_three_salaries.sql)|Hard|
+|192|[Word Frequency](https://leetcode.com/problems/word-frequency/) | [SHELL](./sqlbash/s0192_word_frequency.sh)|Medium|
+|193|[Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/) | [SHELL](./sqlbash/s0193_valid_phone_numbers.sh)|Easy|
+|194|[Transpose File](https://leetcode.com/problems/transpose-file/) | [SHELL](./sqlbash/s0194_transpose_file.sh)|Medium|
+|195|[Tenth Line](https://leetcode.com/problems/tenth-line/) | [SHELL](./sqlbash/s0195_tenth_line.sh)|Easy|
+|196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/) | [SQL](./sqlbash/s0196_delete_duplicate_emails.sql)|Easy|
+|197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/) | [SQL](./sqlbash/s0197_rising_temperature.sql)|Easy|
+|262|[Trips and Users](https://leetcode.com/problems/trips-and-users/) | [SQL](./sqlbash/s0262_trips_and_users.sql)|Hard|
+|595|[Big Countries](https://leetcode.com/problems/big-countries/) | [SQL](./sqlbash/s0595_big_countries.sql)|Easy|
+|627|[Swap Salary](https://leetcode.com/problems/swap-salary/) | [SQL](./sqlbash/s0627_swap_salary.sql)|Easy|
+|620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/) | [SQL](./sqlbash/s0620_not_boring_movies.sql)|Easy|
+|596|[Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/) | [SQL](./sqlbash/s0596_classes_more_than_5_students.sql)|Easy|
+|626|[Exchange Seats](https://leetcode.com/problems/exchange-seats/) | [SQL](./sqlbash/s0626_exchange_seats.sql)|Medium|
 
 
 

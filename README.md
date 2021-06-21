@@ -4,6 +4,24 @@ LeetCode
 
 (Notes: "🔒" means you need to buy subscription from Leetcode)
 
+## Directory
+
+### - [Array](#array)
+### - [Backtracking](#backtracking)
+### - [Bit Manipulation](#bit-manipulation)
+### - [C](#c)
+### - [Design](#design)
+### - [Dynamic Programming](#dynamic-programming)
+### - [graph](#graph)
+### - [Linkedlist](#linkedlist)
+### - [Math](#math)
+### - [random](#random)
+### - [SqlBash](#sqlbash)
+### - [Stack Priority Queue](#stack-priority-queue)
+### - [String](#string)
+### - [Tree](#tree)
+
+
 ### Array
 
 

@@ -78,6 +78,7 @@ LeetCode
 |560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | [Rust](./array/src/solution/s0560_subarray_sum_equals_k.rs)|Medium|
 |575|[Distribute Candies](https://leetcode.com/problems/distribute-candies/) | [Rust](./array/src/solution/s0575_distribute_candies.rs)|Easy|
 |581|[Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/) | [Rust](./array/src/solution/s0581_shortest_unsorted_continuous_subarray.rs)|Easy|
+|665|[Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/) | [Rust](./array/src/solution/s0665_non_decreasing_array.rs)|Medium|
 |674|[Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | [Rust](./array/src/solution/s0674_longest_continuous_increasing_subsequence.rs)|Easy|
 |724|[Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | [Rust](./array/src/solution/s0724_find_pivot_index.rs)|Easy|
 |821|[Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character/) | [Rust](./array/src/solution/s0821_shortest_distance_to_a_character.rs)|Easy|

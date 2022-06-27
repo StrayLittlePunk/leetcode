@@ -75,3 +75,4 @@ mod s0647_palindromic_substrings;
 mod s1092_shortest_common_supersequence;
 mod s0929_unique_email_addresses;
 mod s0819_most_common_word;
+mod s1689_partitioning_into_minimum_number_of_deci_binary_numbers;

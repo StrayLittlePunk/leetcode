@@ -522,7 +522,7 @@ LeetCode
 |1347|[Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) | [Rust](./string/src/solution/s1347_minimum_number_of_steps_to_make_two_strings_anagram.rs)|Medium|
 |1528|[Shuffle String](https://leetcode.com/problems/shuffle-string/) | [Rust](./string/src/solution/s1528_shuffle_string.rs)|Easy|
 |1629|[Slowest Key](https://leetcode.com/problems/slowest-key/) | [Rust](./string/src/solution/s1629_slowest_key.rs)|Easy|
-
+|1689|[Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | [Rust](./string/src/solution/s1689_partitioning_into_minimum_number_of_deci_binary_numbers.rs)|Medium|
 
 ### Tree
 

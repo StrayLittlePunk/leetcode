@@ -68,3 +68,4 @@ mod s0904_fruit_into_baskets;
 mod s1314_matrix_block_sum;
 mod s0989_add_to_array_form_of_integer;
 mod s0665_non_decreasing_array;
+mod s0704_binary_search;

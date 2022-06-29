@@ -69,3 +69,4 @@ mod s1314_matrix_block_sum;
 mod s0989_add_to_array_form_of_integer;
 mod s0665_non_decreasing_array;
 mod s0704_binary_search;
+mod s0977_squares_of_a_sorted_array;

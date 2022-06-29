@@ -90,6 +90,7 @@ LeetCode
 |939|[Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle/) | [Rust](./array/src/solution/s0939_minimum_area_rectangle.rs)|Medium|
 |941|[Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) | [Rust](./array/src/solution/s0941_valid_mountain_array.rs)|Easy|
 |969|[Pancake Sorting](https://leetcode.com/problems/pancake-sorting/) | [Rust](./array/src/solution/s0969_pancake_sorting.rs)|Medium|
+|977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [Rust](./array/src/solution/s0977_squares_of_a_sorted_array.rs)|Easy|
 |986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [Rust](./array/src/solution/s0986_interval_list_intersections.rs)|Medium|
 |989|[Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) | [Rust](./array/src/solution/s0989_add_to_array_form_of_integer.rs)|Easy|
 |1053|[Previous Permutation With One Swap](https://leetcode.com/problems/previous-permutation-with-one-swap/) | [Rust](./array/src/solution/s1053_previous_permutation_with_one_swap.rs)|Medium|

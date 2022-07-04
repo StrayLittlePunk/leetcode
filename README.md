@@ -299,6 +299,7 @@ LeetCode
 |234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)| [Rust](./linkedlist/src/solution/s0234_palindrome_linked_list.rs)|Easy|
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [Rust](./linkedlist/src/solution/s0328_odd_even_linked_list.rs)|Medium|
 |369|[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/) | [Rust](./linkedlist/src/solution/s0369_plus_one_linked_list.rs)|Medium|
+|876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Rust](./linkedlist/src/solution/s0876_middle_of_the_linked_list.rs)|Easy|
 
 
 

@@ -17,3 +17,4 @@ mod s0061_rotate_list;
 mod s0086_partition_list;
 mod s0147_insertion_sort_list;
 mod s0023_merge_k_sorted_lists;
+mod s0876_middle_of_the_linked_list;

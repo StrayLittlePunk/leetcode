@@ -77,3 +77,4 @@ mod s0929_unique_email_addresses;
 mod s0819_most_common_word;
 mod s1689_partitioning_into_minimum_number_of_deci_binary_numbers;
 mod s0557_reverse_words_in_a_string_iii;
+mod s0567_permutation_in_string;

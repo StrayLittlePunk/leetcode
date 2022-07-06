@@ -269,6 +269,7 @@ LeetCode
 |444|[Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/) | [Rust](./graph/src/solution/s0444_sequence_reconstruction.rs)|Medium|
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter/) | [Rust](./graph/src/solution/s0463_island_perimeter.rs)|Easy|
 |675|[Cut Off Trees for Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/) | [Rust](./graph/src/solution/s0675_cut_off_trees_for_golf_event.rs)|Hard|
+|695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [Rust](./graph/src/solution/s0695_max_area_of_island.rs)|Medium|
 |766|[Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/) | [Rust](./graph/src/solution/s0766_toeplitz_matrix.rs)|Easy|
 |787|[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [Rust](./graph/src/solution/s0787_cheapest_flights_within_k_stops.rs)|Medium|
 |841|[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | [Rust](./graph/src/solution/s0841_keys_and_rooms.rs)|Medium|

@@ -28,3 +28,4 @@ mod s0463_island_perimeter;
 mod s1254_number_of_closed_islands;
 mod s0675_cut_off_trees_for_golf_event;
 mod s0695_max_area_of_island;
+mod s0542_01_matrix;

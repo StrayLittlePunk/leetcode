@@ -128,6 +128,7 @@ LeetCode
 |320|[Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/)  | [Rust](./backtracking/src/solution/s0320_generalized_abbreviation.rs)|Medium|
 |351|[Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/)  | [Rust](./backtracking/src/solution/s0351_android_unlock_patterns.rs)|Medium|
 |377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/) | [Rust](./backtracking/src/solution/s0377_combination_sum_iv.rs)|Medium|
+|784|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/) | [Rust](./backtracking/src/solution/s0784_letter_case_permutation.rs)|Medium|
 |1219|[Path with Maximum Gold](https://leetcode.com/problems/path-with-maximum-gold/) | [Rust](./backtracking/src/solution/s1219_path_with_maximum_gold.rs)|Medium|
 
 

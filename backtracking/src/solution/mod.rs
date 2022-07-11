@@ -18,3 +18,4 @@ mod s0282_expression_add_operators;
 mod s0140_word_break_ii;
 mod s0351_android_unlock_patterns;
 mod s1219_path_with_maximum_gold;
+mod s0784_letter_case_permutation;
